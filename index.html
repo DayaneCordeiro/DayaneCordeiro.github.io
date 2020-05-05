@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math world</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>BEM VINDOS</br> AO MUNDO DA MATEMÁTICA</h1>
+    <div>
+      <img src="imagens/monstrinho.png">
+    </div>
+    <div class="divButtonCalculator">
+      <button title="CLIQUE AQUI PARA ABRIR A CALCULADORA E COMEÇAR A APRENDER!" class="buttonCalculator" onclick="redirecionar()">CALCULADORA</button>
+    </div>    
+    
+  </div>
+
+<script>
+  function TocarMusica() {
+      var audio1 = new Audio();
+      audio1.src = "sons/calculator_button.mp3";
+      audio1.play();
+      audio1.muted = false;
+  }
+  async function redirecionar() {
+      location.replace('calculator.html');
+  }
+</script>
+</body>
+</html>

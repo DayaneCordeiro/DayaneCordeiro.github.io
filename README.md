@@ -1,0 +1,1 @@
+Calculadora desenvolvida em projeto para crianças que estão em casa durante a pandemia do COVID 19. Trabalho realizado na disciplina Interação Humano Computador 💻

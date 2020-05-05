@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math world</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>ESCOLHA A OPERAÇÃO</h1>
+    <div class="operations">
+      <button title="A SOMA É MUITO FÁCIL, BASTA VOCÊ JUNTAR O VALOR DE UM NÚMERO COM O VALOR DE OUTRO NÚMERO E VAI ACHAR O RESULTADO!" class="buttonOperation soma" onclick="playMusicOperationsButtons()">+</button>
+      <button title="A SUBTRAÇÃO É MUITO FÁCIL, VOCÊ PEGA O VALOR DE UM NÚMERO E VÊ QUANTO SOBRA SE RETIRAR O VALOR DE OUTRO NÚMERO DE DENTRO DELE!" class="buttonOperation subtracao" onclick="playMusicOperationsButtons()">-</button>
+      <button title="A MULTIPLICAÇÃO É MUITO FÁCIL, BASTA VOCÊ SOMAR O VALOR DE UM NÚMERO A QUANTIDADE DE VEZES DO VALOR DO OUTRO NÚMERO!" class="buttonOperation multiplicacao" onclick="playMusicOperationsButtons()">x</button>
+      <button title="A DIVISÃO É MUITO FÁCIL, BASTA DESCOBRIR QUANTAS VEZES O VALOR DE UM NÚMERO CABE DENTRO DO VALOR DE OUTRO NÚMERO!" class="buttonOperation divisao" onclick="playMusicOperationsButtons()">÷</button>
+    </div>
+    
+    <div class="calculatorDisplay">
+      <h4 class="titleOperation">OPERAÇÃO</h4>
+
+      <div>
+        <form>
+          <input class="first" type="number" maxlength="3" required>
+          <label class="signOperation">?</label>
+          <input class="second" type="number" maxlength="3" required>
+          <input type="submit" class="equals" onclick="playMusicEquals()" value="=" title="CLIQUE APOS TER ESCOLHIDO O TIPO DE OPERAÇÃO E TER PREENCHIDO OS NÚMEROS PARA OBTER O RESULTADO DA OPERAÇÃO">
+          <label class="labelResult">RESULTADO</label>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
